@@ -1,42 +1,7 @@
 {
-  "name": "irepad",
-  "description": "A mod of Firepad for the Mystery Hunt",
-  "version": "0.0.0",
-  "authors": [
-    "Rob Speer <rob.speer@gmail.com>"
-  ],
-  "homepage": "http://ireproof.org",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/firebase/firepad.git"
-  },
-  "license": "MIT",
-  "keywords": [
-    "firepad",
-    "mystery hunt",
-    "rage"
-  ],
-  "main": [
-    "dist/irepad.js",
-    "dist/irepad.css"
-  ],
-  "ignore": [
-    "**/.*",
-    "lib",
-    "font",
-    "test",
-    "examples",
-    "node_modules",
-    "bower_components",
-    "Gruntfile.js",
-    "package.json",
-    "changelog.txt"
-  ],
-  "dependencies": {
-    "firepad": "0.x.x",
-    "firebase": "1.0.x",
-    "codemirror": "4.x.x"
-  },
-  "devDependencies": {
-  }
+    "name": "Undefined",
+    "version": "0.0.1",
+    "dependencies": {
+        "underscore": "*"
+    }
 }

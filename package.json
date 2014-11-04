@@ -1,37 +1,30 @@
 {
   "name": "irepad",
-  "description": "Collaborative text editing powered by Firebase",
-  "version": "0.0.0",
-  "author": "Rob Speer <rob.speer@gmail.com>",
-  "contributors": [
-  ],
-  "homepage": "http://ireproof.org/",
+  "description": "An IRE PROOF collaborative editor, built on FirePad.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/rspeer/irepad",
+  "author": {
+    "name": "Rob Speer",
+    "email": "rob@luminoso.com",
+    "url": "http://rspeer.github.io"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rspeer/irepad.git"
+    "url": "git://github.com/rspeer/irepad.git"
   },
   "bugs": {
     "url": "https://github.com/rspeer/irepad/issues"
   },
   "licenses": [
     {
-      "type": "MIT"
+      "type": "MIT",
+      "url": "https://github.com/rspeer/irepad/blob/master/LICENSE-MIT"
     }
-  ],
-  "keywords": [
-    "text",
-    "editor",
-    "puzzle",
-    "mystery hunt",
-    "rage",
-    "firebase",
-    "realtime",
-    "collaborative"
   ],
   "main": "dist/irepad.js",
   "files": [
     "dist/**",
-    "LICENSE",
+    "LICENSE-MIT",
     "README.md",
     "package.json"
   ],
@@ -39,16 +32,16 @@
     "firepad": "0.x.x"
   },
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-cli": "0.1.13",
-    "grunt-contrib-concat": "~0.1.3",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-coffee": "~0.7.0",
-    "grunt-coffeelint": "0.0.7",
-    "grunt-contrib-watch": "~0.6.1"
+    "coffee-script": "*",
+    "bower": "*",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-watch": "*",
+    "http-static": "*"
   },
+  "keywords": [],
   "scripts": {
-    "test": "grunt test"
+    "build": "npm install && bower install && grunt && node_modules/.bin/simple-static"
   }
 }

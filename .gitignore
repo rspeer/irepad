@@ -1,12 +1,7 @@
-.idea
-*.iml
-dist/
-build/
+.DS_Store
+js/
 node_modules/
 bower_components/
-*.sw?
-.DS_Store
-
-# generated
-lib/ace-adapter.js
-dist/firepad.zip
+dist/
+*~
+.*.swp
