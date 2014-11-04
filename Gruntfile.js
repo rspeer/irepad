@@ -20,10 +20,17 @@ module.exports = function(grunt){
                 files: ['coffee/*.coffee', 'example/coffee/*.coffee'],
                 tasks: 'coffee'
             }
+        },
+        bower: {
+            target: {
+                rjsConfig: 'app/config.js'
+            }
         }
     });
 
-    grunt.registerTask('default',[
-        'coffee', 'watch'
+    grunt.loadNpmTasks('grunt-bower-requirejs');
+
+    grunt.registerTask('default', [
+        'coffee', 'bower'
     ]);
 };
