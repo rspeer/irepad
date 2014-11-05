@@ -19,15 +19,14 @@ module.exports = function(grunt){
         concat: {
             libs: {
                 src: [
-                    'bower_components/underscore/underscore.js',
-                    'bower_components/firebase/firebase-debug.js',
-                    'bower_components/codemirror/lib/codemirror.js',
-                    'bower_components/codemirror/mode/xml/xml.js',
-                    'bower_components/codemirror/mode/markdown/markdown.js',
-                    'bower_components/codemirror/mode/gfm/gfm.js',
-                    'bower_components/codemirror/addon/mode/overlay.js',
-                    'bower_components/firepad/dist/firepad.js',
-                    'lib/firepad-userlist.js'
+                    // JS libraries we depend on, in dependency order
+                    'lib/underscore/underscore.js',
+                    'lib/codemirror/lib/codemirror.js',
+                    'lib/codemirror/mode/xml/xml.js',
+                    'lib/codemirror/mode/markdown/markdown.js',
+                    'lib/codemirror/mode/gfm/gfm.js',
+                    'lib/codemirror/addon/mode/overlay.js',
+                    'lib/userlist/firepad-userlist.js'
                 ],
                 dest: 'js/libs.js'
             }
