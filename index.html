@@ -1,14 +1,40 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Irepad</title>
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
+
+    <!-- CodeMirror -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/4.5.0/codemirror.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/4.5.0/codemirror.css" />
+
+    <!-- Firepad -->
+    <script src="https://cdn.firebase.com/libs/firepad/1.0.0/firepad.js"></script>
+    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firepad/1.0.0/firepad.css" />
+
+    <!-- other libraries -->
+    <script src="bower_components/underscore/underscore.js"></script>
+
+    <!-- customizable things -->
+    <script src="bower_components/codemirror/mode/xml/xml.js"></script>
+    <script src="bower_components/codemirror/mode/markdown/markdown.js"></script>
+    <script src="bower_components/codemirror/mode/gfm/gfm.js"></script>
+    <script src="bower_components/codemirror/addon/mode/overlay.js"></script>
+    
+    <!-- Firepad userlist -->
+    <script src="lib/firepad-userlist.js"></script>
+    <link rel="stylesheet" href="lib/firepad-userlist.css" />
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="css/irepad.css"></script>
 </head>
 <body>
+    <div id="userlist"></div>
+    <div id="firepad"></div>
 
-    <!-- Put stuff here -->
-
-<script src="bower_components/underscore/underscore-min.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/irepad.js"></script>
 </body>
 </html>

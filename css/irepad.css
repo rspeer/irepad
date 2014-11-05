@@ -1,0 +1,26 @@
+html { height: 100%; }
+body { margin: 0; height: 100%; }
+/* Height / width / positioning can be customized for your use case.
+   For demo purposes, we make the user list 175px and firepad fill the rest of the page. */
+#userlist {
+  position: absolute; left: 0; top: 0; bottom: 0; height: 100%;
+  width: 175px;
+}
+.firepad-userlist {
+  height: 100%;
+}
+.firepad-userlist-heading {margin: 0; padding: 5px 5px 0 5px;}
+#firepad {
+  position: absolute; left: 180px; top: 5px; bottom: 5px; right: 0; height: auto;
+}
+.firepad .CodeMirror {
+  font-family: Consolas, Monaco, Menlo, "Andale Mono", monospace;
+  line-height: 1.2em;
+}
+.firepad .CodeMirror .cm-header { font-family: sans-serif; }
+.cm-header-1 { font-size: 150%; }
+.cm-header-2 { font-size: 130%; }
+.cm-header-3 { font-size: 120%; }
+.cm-header-4 { font-size: 110%; }
+.cm-header-5 { font-size: 100%; }
+.cm-header-6 { font-size: 90%; }

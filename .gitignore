@@ -2,7 +2,6 @@
 js/
 node_modules/
 bower_components/
-dist/
 *~
 .*.swp
 npm-debug.log

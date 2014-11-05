@@ -21,7 +21,7 @@
       "url": "https://github.com/rspeer/irepad/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "dist/irepad.js",
+  "main": "js/irepad.js",
   "files": [
     "dist/**",
     "LICENSE-MIT",
@@ -29,16 +29,14 @@
     "package.json"
   ],
   "dependencies": {
-    "bower-requirejs": "^1.1.2",
-    "firepad": "0.x.x"
   },
   "devDependencies": {
     "bower": "*",
     "coffee-script": "*",
     "grunt": "*",
-    "grunt-bower-requirejs": "^1.1.0",
     "grunt-cli": "*",
     "grunt-contrib-coffee": "*",
+    "grunt-contrib-concat": "*",
     "grunt-contrib-watch": "*",
     "http-static": "*"
   },

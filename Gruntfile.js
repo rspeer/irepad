@@ -1,36 +1,46 @@
 module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-coffee');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.initConfig({
-        coffee:{
-            compileJoined: {
+        coffee: {
+            compile: {
                 options: {
-                    join: true
+                    sourceMap: true
                 },
                 files: {
-                    'js/main.js': [
-                        'coffee/*'
+                    'js/irepad.js': [
+                        'coffee/**/*.coffee',
                     ]
                 }
-            },
+            }
+        },
+        concat: {
+            libs: {
+                src: [
+                    'bower_components/underscore/underscore.js',
+                    'bower_components/firebase/firebase-debug.js',
+                    'bower_components/codemirror/lib/codemirror.js',
+                    'bower_components/codemirror/mode/xml/xml.js',
+                    'bower_components/codemirror/mode/markdown/markdown.js',
+                    'bower_components/codemirror/mode/gfm/gfm.js',
+                    'bower_components/codemirror/addon/mode/overlay.js',
+                    'bower_components/firepad/dist/firepad.js',
+                    'lib/firepad-userlist.js'
+                ],
+                dest: 'js/libs.js'
+            }
         },
         watch: {
             coffee: {
-                files: ['coffee/*.coffee', 'example/coffee/*.coffee'],
+                files: ['coffee/*.coffee'],
                 tasks: 'coffee'
-            }
-        },
-        bower: {
-            target: {
-                rjsConfig: 'app/config.js'
             }
         }
     });
 
-    grunt.loadNpmTasks('grunt-bower-requirejs');
-
     grunt.registerTask('default', [
-        'coffee', 'bower'
+        'coffee', 'concat', 'watch'
     ]);
 };
