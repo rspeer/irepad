@@ -24,3 +24,11 @@ body { margin: 0; height: 100%; }
 .cm-header-4 { font-size: 110%; }
 .cm-header-5 { font-size: 100%; }
 .cm-header-6 { font-size: 90%; }
+
+/* lists are not rainbow vomit */
+.cm-s-default .cm-keyword {color: black;}
+.cm-s-default .cm-variable-2 {color: black;}
+.cm-s-default .cm-variable-3 {color: black;}
+.cm-s-default .cm-link {color: #00c;}
+
+.powered-by-firepad {display: none;}

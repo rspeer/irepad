@@ -1,0 +1,35 @@
+{
+  "name": "firepad",
+  "version": "0.1.4",
+  "homepage": "http://www.firepad.io",
+  "authors": [
+    "Michael Lehenbauer"
+  ],
+  "description": "Collaborative Text Editing powered by Firebase",
+  "main": [
+    "dist/firepad.js",
+    "dist/firepad.css",
+    "dist/firepad.eot"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "examples",
+    "Gruntfile.js",
+    "font",
+    "package.json",
+    "lib"
+  ],
+  "_release": "0.1.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.4",
+    "commit": "37c86c106dc882955a47c71f5b90fd68f7e0d991"
+  },
+  "_source": "git://github.com/firebase/firepad.git",
+  "_target": "0.x.x",
+  "_originalSource": "firepad"
+}
