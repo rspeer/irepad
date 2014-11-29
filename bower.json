@@ -34,7 +34,8 @@
   ],
   "dependencies": {
     "codemirror": "4.x.x",
-    "underscore": "1.7.0"
+    "underscore": "1.7.0",
+    "reactfire": "*"
   },
   "devDependencies": {
   }
