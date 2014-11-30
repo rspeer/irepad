@@ -60,4 +60,6 @@ body {
 .cm-s-default .cm-variable-3 {color: black;}
 .cm-s-default .cm-link {color: #00c;}
 
+.cm-link {cursor: pointer;}
+
 .powered-by-firepad {display: none;}
