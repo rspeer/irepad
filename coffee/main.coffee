@@ -1,6 +1,6 @@
 URL_BASE = 'http://ireproof.org'
 
-linkClicked = (event) -> 
+linkClicked = (event) ->
     linkText = $(event.target).text()
     internalLink = true
     url = '#'
