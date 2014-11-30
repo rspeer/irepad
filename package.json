@@ -38,7 +38,8 @@
     "grunt-contrib-coffee": "*",
     "grunt-contrib-concat": "*",
     "grunt-contrib-watch": "*",
-    "http-static": "*"
+    "http-static": "*",
+    "gulp": "*"
   },
   "keywords": [],
   "scripts": {
